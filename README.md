@@ -26,6 +26,11 @@ Para saber mais sobre o Epic! Shard: [GitHub - Epic-Server](https://github.com/i
 ## Contribuições
 Ideias e sugestões da comunidade são sempre bem-vindas! Se você tem uma ideia para uma nova funcionalidade ou melhoria, não hesite em compartilhar.
 
+## Agradecimentos
+Agradeço ao [Enzo Turano](https://github.com/enzoturano) por me ajudar com o desenvolvimento do Bot! Obrigado, meu caro!
+
+E ao [Igor Turano](https://github.com/igorturano) pela confiança e liberdade em seu Discord, Servidor e Software em fazer implementações! Obrigado!
+
 ### Saiba Mais
 [Site Oficial Epic Shard](https://epic-shard.com/)
 
