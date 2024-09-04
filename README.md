@@ -29,7 +29,7 @@ Ideias e sugestões da comunidade são sempre bem-vindas! Se você tem uma ideia
 ## Agradecimentos
 Agradeço ao [Enzo Turano](https://github.com/enzoturano) por me ajudar com o desenvolvimento do Bot! Obrigado, meu caro!
 
-E ao [Igor Turano](https://github.com/igorturano) pela confiança e liberdade em seu Discord, Servidor e Software em fazer implementações! Obrigado!
+E ao [Igor Turano](https://github.com/igorrturano) pela confiança e liberdade em seu Discord, Servidor e Software em fazer implementações! Obrigado!
 
 ### Saiba Mais
 [Site Oficial Epic Shard](https://epic-shard.com/)
