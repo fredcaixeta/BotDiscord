@@ -16,13 +16,13 @@ Integração com AI: OpenAI API
 ## Estado do Projeto
 O AI-Epic está em desenvolvimento ativo. Novas funcionalidades são continuamente adicionadas com base no feedback e nas necessidades da comunidade do servidor Epic!.
 
-Para saber mais sobre o Epic! Shard: GitHub - Epic-Server
+Para saber mais sobre o Epic! Shard: [GitHub - Epic-Server](https://github.com/igorrturano/Epic-Server)
 
 ## Contribuições
 Ideias e sugestões da comunidade são sempre bem-vindas! Se você tem uma ideia para uma nova funcionalidade ou melhoria, não hesite em compartilhar.
 
 ### Saiba Mais
-Site Oficial: Link para o site oficial
-Repositório: Link para o repositório no GitHub
-Discord: Link para o servidor Discord
-AI-Epic: Elevando a experiência de roleplay no Epic! um comando por vez.
+[Site Oficial Epic Shard](https://epic-shard.com/)
+[Link para o servidor Discord Epíc Shard](https://discord.com/invite/epic-shard)
+
+## AI-Epic: Elevando a experiência de roleplay no Epic! um comando por vez.
