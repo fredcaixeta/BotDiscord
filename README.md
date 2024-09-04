@@ -23,6 +23,7 @@ Ideias e sugestões da comunidade são sempre bem-vindas! Se você tem uma ideia
 
 ### Saiba Mais
 [Site Oficial Epic Shard](https://epic-shard.com/)
+
 [Link para o servidor Discord Epíc Shard](https://discord.com/invite/epic-shard)
 
-## AI-Epic: Elevando a experiência de roleplay no Epic! um comando por vez.
+### AI-Epic: Elevando a experiência de roleplay no Epic! um comando por vez.
