@@ -40,8 +40,9 @@ def OpenAICompletion(system_message, questions):
         "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}"  # Use a chave da API do ambiente
     }
     payload = {
-        "model": "gpt-4o-mini",
-        "messages": formatted_questions
+        "model": "gpt-4",  # Ajuste conforme a sua necessidade
+        "messages": formatted_questions,
+        "temperature": 0.7  # Ajuste a criatividade da resposta, se necessário
     }
 
     # Envio da requisição para a API
@@ -54,13 +55,35 @@ def OpenAICompletion(system_message, questions):
     else:
         return {"error": response.status_code, "message": response.text}
 
-# Exemplo de uso
+# Exemplo de uso com loop de interação
 if __name__ == "__main__":
-    system_message = "Você é um assistente amigável."
-    questions = "Como vai assistente?"
-    questions = [
-        {"user": questions}
-    ]
+    system_message = (
+        "Você é um banqueiro medieval de RPG amigável. O personagem que fala com você é um nórdico, "
+        "que não tem uma conta no banco. Você retornará uma resposta em um formato list com duas informações - "
+        "a primeira é a resposta ao personagem, a segunda é a resposta ao código (True caso ele tenha se registrado, False caso contrário). "
+        "Você quer que ele se registre. Se ele desejar se registrar, apenas fale que ele acaba de ser registrado. "
+        "Responda o personagem com um máximo de 50 caracteres."
+    )
 
-    response = OpenAICompletion(system_message, questions)
-    print(response)
+    # Inicializa o array de perguntas e respostas
+    questions = []
+
+    while True:
+        # Input do usuário
+        user_input = input("Você (digite 'sair' para encerrar): ")
+        
+        if user_input.lower() == "sair":
+            print("Encerrando conversa...")
+            break
+
+        # Adiciona a fala do usuário na lista de perguntas
+        questions.append({"user": user_input})
+
+        # Envia a conversa para o modelo da OpenAI e obtém a resposta
+        response = OpenAICompletion(system_message, questions)
+
+        # Adiciona a resposta do NPC às perguntas
+        questions.append({"assistant": response})
+        
+        for question in questions:
+            print(question)
