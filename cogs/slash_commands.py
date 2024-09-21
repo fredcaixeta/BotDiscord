@@ -135,18 +135,18 @@ class SlashCommands(commands.Cog):
             while restart == True:
                 dm_channel = await user.create_dm()
                 #var systemMessage := "Você é um banqueiro medieval de RPG. Responda como tal. O aventureiro que fala com você é um " + sourceRaca + "com descrição" + sourceDescription + ". Máximo de 50 caracteres.";
-                await dm_channel.send(f"Fale ao ChatGPT o contexto do personagem (NPC) - Exemplo: Você é um banqueiro medieval de RPG. Responda como tal. O aventureiro que fala com você é um drow com descrição <está sangrando muito>. Máximo de 50 caracteres.")
+                await dm_channel.send(f"__AI BOT__: Fale ao ChatGPT o contexto do personagem (NPC) - Exemplo: Você é um banqueiro medieval de RPG. Responda como tal. O aventureiro que fala com você é um drow com descrição <está sangrando muito>. Máximo de 50 caracteres.")
                 context = await self.bot.wait_for('message', check=check)
                 context = context.content
                 
-                await dm_channel.send(f"Agora a interação com o Player - Exemplo: Olá banqueiro, traga meu cofre! - ou - Parado aí! Largue a arma!")
+                await dm_channel.send(f"__AI BOT__: Agora a interação com o Player - Exemplo: Olá banqueiro, traga meu cofre! - ou - Parado aí! Largue a arma!")
                 message_player = await self.bot.wait_for('message', check=check)
                 
                 message_player = [{"user": message_player.content}]
                 resposta_ai = self.get_openai_completion(context, message_player)
                 
                 #resposta_ai = "teste"
-                await dm_channel.send(f"OpenAI: {resposta_ai} \n *** \n AI BOT: Deseja começar de novo? Yes / No")
+                await dm_channel.send(f"__OpenAI__:\n{resposta_ai}\n\n__AI BOT__: Deseja começar de novo? Yes / No")
                 restart_confirm = await self.bot.wait_for('message', check=check)
                 
                 if restart_confirm == "No":
